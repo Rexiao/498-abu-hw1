@@ -35,7 +35,7 @@ app.get("/greeting", async (req, res) => {
 });
 
 app.post("/register", async (req, res) => {
-  let n = req.body.name;
+  let n = req.body.username;
   n = n.replace(/^[0-9\s]*|[+*\r\n]/g, "");
   const query = `INSERT INTO Users (username) VALUES ('${n}');`;
   const [r1, f1] = await connection.query(query);
