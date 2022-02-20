@@ -1,0 +1,2 @@
+My server code can be found in the folder
+named “hw2_code”
